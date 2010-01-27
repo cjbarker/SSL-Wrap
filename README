@@ -1,0 +1,20 @@
+README.txt
+==========
+1) Build static library and test binaries
+   $ make
+
+
+2) Execute server_tester
+
+cj@cj-desktop:~/ssl_wrapper$ ./server_tester 
+Usage: ./server_tester <port> <cert_path> <key_path>
+
+cj@cj-desktop:~/ssl_wrapper$ ./server_tester 20001 /etc/ssl/certs/cj-desktop.crt /etc/ssl/cj-desktop.key
+
+
+3) Execute client_tester
+
+cj@cj-desktop:~/ssl_wrapper$ ./client_tester 
+Usage: ./client_tester <hostname> <port>
+
+cj@cj-desktop:~/ssl_wrapper$ ./client_tester 127.0.0.1 2001
